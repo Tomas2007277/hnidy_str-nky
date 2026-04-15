@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revize | Zapojeno Elektro</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f1117, #ffffff);
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 1);
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #f5c400;
+    }
+
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 40px;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    .gallery {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #f5c400;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #f5c400;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffdd33;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #0b0d12;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 900px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Zapojeno Elektro logo">
+  <nav>
+    <a href="index.html">Domů</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<div class="content-wrapper">
+
+  <div class="text-content">
+    <h1><span>Bytové</span> elektroinstalace</h1>
+
+    <p>
+      Provádíme kompletní elektroinstalace v rodinných domech, bytech i komerčních prostorách.
+      Zajišťujeme nové rozvody elektřiny, rekonstrukce starých instalací, výměny rozvaděčů
+      i přípravu pro moderní technologie.
+    </p>
+
+    <p>
+      Samozřejmostí je důraz na bezpečnost, kvalitu a dodržení platných norem.
+    </p>
+
+    <a href="index.html#kontakt" class="btn">Nezávazná poptávka</a>
+  </div>
+
+  <div class="gallery">
+    <img src="./fotky/opice1.jpg" alt="">
+    <img src="./fotky/opice1.jpg" alt="">
+    <img src="./fotky/opice1.jpg" alt="">
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Zapojeno Elektro • Všechna práva vyhrazena
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poptávka</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1117;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 600px;
+    background: #1f2330;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5c400;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #2a2f45;
+    color: white;
+    font-size: 16px;
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    background: #f5c400;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background: #ffd84d;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+  <h1>Poptávka elektrikáře</h1>
+
+  <form action="https://formsubmit.co/vozkatom2@gmail.com" method="POST">
+
+    <input type="text" name="jmeno" placeholder="Jméno a příjmení" required>
+
+    <input type="email" name="email" placeholder="Email" required>
+
+    <input type="text" name="telefon" placeholder="Telefon">
+
+    <textarea name="zprava" placeholder="Popište problém / poptávku..." required></textarea>
+
+    <button type="submit">ODESLAT POPTÁVKU</button>
+
+  </form>
+</div>
+
+</body>
+</html>
